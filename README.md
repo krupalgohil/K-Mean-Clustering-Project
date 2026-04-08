@@ -213,23 +213,6 @@ The RE-ENGAGE segment carries the highest churn scores (avg Recency of 254 days)
 
 ---
 
-## Streamlit Dashboard
-
-An interactive dashboard for non-technical stakeholders to explore all 7 segments, view EDA charts, and download the at-risk customer list as a CSV.
-
-**4 tabs:**
-
-- **Segment Overview** — full summary table, customer counts, RFM heatmap
-- **EDA** — country revenue, monthly trend, top products
-- **Cluster Visualisation** — PCA 2D scatter, RFM boxplots by segment
-- **At-Risk Customers** — ranked churn list with one-click CSV export
-
-```bash
-streamlit run app.py
-```
-
----
-
 ## How to Run
 
 ### 1. Clone the repository
@@ -253,12 +236,6 @@ Download `online_retail_II.xlsx` from the [UCI ML Repository](https://archive.ic
 
 Open `Customer_Segmentation.ipynb` in Jupyter and run all cells top to bottom. All 19 steps execute sequentially with no manual intervention required.
 
-### 5. Launch the dashboard
-
-```bash
-streamlit run app.py
-```
-
 ---
 
 ## Tech Stack
@@ -269,7 +246,6 @@ streamlit run app.py
 | Pandas, NumPy | Data cleaning, RFM aggregation |
 | Seaborn, Matplotlib | All visualisations (EDA + model results) |
 | Scikit-Learn | K-Means, StandardScaler, PCA, Silhouette Score |
-| Streamlit | Interactive multi-tab dashboard |
 | OpenPyXL | Reading the Excel dataset |
 
 ---
@@ -299,5 +275,3 @@ For a retailer with ~4,285 known customers:
 ## References
 
 1. Chen, D. et al. (2012). *Online Retail II Data Set.* UCI Machine Learning Repository. https://archive.ics.uci.edu/dataset/502/online+retail+ii
-2. Hughes, A.M. (1994). *Strategic Database Marketing.* Probus Publishing.
-3. RFM Analysis. Wikipedia. https://en.wikipedia.org/wiki/RFM_(market_research)
